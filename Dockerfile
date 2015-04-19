@@ -23,4 +23,5 @@ ADD rabbitmq.config /etc/rabbitmq/rabbitmq.config
 # For RabbitMQ and RabbitMQ Adminm
 EXPOSE 5672 15672
 
+USER rabbitmq
 ENTRYPOINT ["/usr/sbin/rabbitmq-server"]
